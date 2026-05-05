@@ -1,7 +1,0 @@
-{
-  "command": "summarize-queries",
-  "elapsed_seconds": 22.934549808502197,
-  "result": {
-    "query_focused_summaries": 50
-  }
-}
