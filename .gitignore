@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Large data directories
+dataset aila/
+data/processed/
+classification_outputs/
+rag_outputs/
+summarization_outputs/
+model_benchmark_outputs/
+metrics/
+indexes/
+runs/
+
+# Logs and outputs
+logs/
+analytics/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep structure but exclude contents
+!dataset aila/.gitkeep
+!data/processed/.gitkeep
