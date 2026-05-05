@@ -1,0 +1,281 @@
+{
+  "collections": {
+    "cases": {
+      "micro_precision": 0.9760529258292956,
+      "micro_recall": 0.9831987985733058,
+      "micro_f1": 0.9796128308239035,
+      "per_label": {
+        "constitutional_law": {
+          "tp": 667,
+          "fp": 12,
+          "fn": 15,
+          "support": 682
+        },
+        "criminal_law": {
+          "tp": 1783,
+          "fp": 4,
+          "fn": 7,
+          "support": 1790
+        },
+        "civil_procedure": {
+          "tp": 1660,
+          "fp": 35,
+          "fn": 52,
+          "support": 1712
+        },
+        "property_law": {
+          "tp": 359,
+          "fp": 5,
+          "fn": 10,
+          "support": 369
+        },
+        "contract_law": {
+          "tp": 190,
+          "fp": 2,
+          "fn": 16,
+          "support": 206
+        },
+        "service_law": {
+          "tp": 480,
+          "fp": 0,
+          "fn": 11,
+          "support": 491
+        },
+        "administrative_law": {
+          "tp": 1112,
+          "fp": 7,
+          "fn": 19,
+          "support": 1131
+        },
+        "evidence_law": {
+          "tp": 1259,
+          "fp": 31,
+          "fn": 10,
+          "support": 1269
+        },
+        "family_law": {
+          "tp": 231,
+          "fp": 1,
+          "fn": 18,
+          "support": 249
+        },
+        "tax_law": {
+          "tp": 145,
+          "fp": 1,
+          "fn": 2,
+          "support": 147
+        },
+        "labor_law": {
+          "tp": 176,
+          "fp": 0,
+          "fn": 4,
+          "support": 180
+        },
+        "writ_jurisdiction": {
+          "tp": 331,
+          "fp": 12,
+          "fn": 12,
+          "support": 343
+        },
+        "statutory_interpretation": {
+          "tp": 2082,
+          "fp": 147,
+          "fn": 3,
+          "support": 2085
+        },
+        "other": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "support": 0
+        }
+      }
+    },
+    "statutes": {
+      "micro_precision": 0.9276595744680851,
+      "micro_recall": 0.9710467706013363,
+      "micro_f1": 0.9488574537540806,
+      "per_label": {
+        "constitutional_law": {
+          "tp": 41,
+          "fp": 3,
+          "fn": 0,
+          "support": 41
+        },
+        "criminal_law": {
+          "tp": 49,
+          "fp": 5,
+          "fn": 2,
+          "support": 51
+        },
+        "civil_procedure": {
+          "tp": 31,
+          "fp": 2,
+          "fn": 1,
+          "support": 32
+        },
+        "property_law": {
+          "tp": 26,
+          "fp": 4,
+          "fn": 2,
+          "support": 28
+        },
+        "contract_law": {
+          "tp": 15,
+          "fp": 2,
+          "fn": 1,
+          "support": 16
+        },
+        "service_law": {
+          "tp": 14,
+          "fp": 1,
+          "fn": 1,
+          "support": 15
+        },
+        "administrative_law": {
+          "tp": 60,
+          "fp": 6,
+          "fn": 3,
+          "support": 63
+        },
+        "evidence_law": {
+          "tp": 8,
+          "fp": 5,
+          "fn": 0,
+          "support": 8
+        },
+        "family_law": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 1,
+          "support": 8
+        },
+        "tax_law": {
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "support": 7
+        },
+        "labor_law": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "support": 11
+        },
+        "writ_jurisdiction": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 1,
+          "support": 8
+        },
+        "statutory_interpretation": {
+          "tp": 143,
+          "fp": 5,
+          "fn": 0,
+          "support": 143
+        },
+        "other": {
+          "tp": 18,
+          "fp": 0,
+          "fn": 0,
+          "support": 18
+        }
+      }
+    },
+    "queries": {
+      "micro_precision": 0.825503355704698,
+      "micro_recall": 0.6542553191489362,
+      "micro_f1": 0.7299703264094957,
+      "per_label": {
+        "constitutional_law": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 5,
+          "support": 8
+        },
+        "criminal_law": {
+          "tp": 38,
+          "fp": 1,
+          "fn": 1,
+          "support": 39
+        },
+        "civil_procedure": {
+          "tp": 26,
+          "fp": 5,
+          "fn": 2,
+          "support": 28
+        },
+        "property_law": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 1,
+          "support": 8
+        },
+        "contract_law": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 0,
+          "support": 3
+        },
+        "service_law": {
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "support": 5
+        },
+        "administrative_law": {
+          "tp": 13,
+          "fp": 3,
+          "fn": 4,
+          "support": 17
+        },
+        "evidence_law": {
+          "tp": 12,
+          "fp": 4,
+          "fn": 7,
+          "support": 19
+        },
+        "family_law": {
+          "tp": 3,
+          "fp": 1,
+          "fn": 0,
+          "support": 3
+        },
+        "tax_law": {
+          "tp": 1,
+          "fp": 3,
+          "fn": 2,
+          "support": 3
+        },
+        "labor_law": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "support": 2
+        },
+        "writ_jurisdiction": {
+          "tp": 5,
+          "fp": 4,
+          "fn": 2,
+          "support": 7
+        },
+        "statutory_interpretation": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 40,
+          "support": 46
+        },
+        "other": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "support": 0
+        }
+      }
+    }
+  },
+  "qrels_label_agreement": {
+    "positive_qrels_checked": 416,
+    "label_agreement_rate": 0.8100961538461539
+  }
+}

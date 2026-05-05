@@ -1,0 +1,45 @@
+{
+  "python_version": "3.10.11",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "disk_free_gb": 701.77,
+  "packages": {
+    "torch": {
+      "installed": false,
+      "purpose": "Core tensor/model runtime"
+    },
+    "transformers": {
+      "installed": false,
+      "purpose": "Legal-BERT/InLegalBERT/LED model loading"
+    },
+    "sentence_transformers": {
+      "installed": false,
+      "purpose": "Dense retrieval embeddings and cross-encoder utilities"
+    },
+    "faiss": {
+      "installed": false,
+      "purpose": "Fast vector indexing"
+    },
+    "sklearn": {
+      "installed": false,
+      "purpose": "Model training and classification metrics"
+    },
+    "numpy": {
+      "installed": false,
+      "purpose": "Vector math backend"
+    },
+    "colbert": {
+      "installed": false,
+      "purpose": "Real ColBERTv2 late-interaction retrieval"
+    }
+  },
+  "torch": {
+    "available": false,
+    "cuda_available": false,
+    "device": "cpu"
+  },
+  "can_run_full_transformers": false,
+  "can_run_dense_retrieval": false,
+  "can_run_faiss": false,
+  "can_run_colbert": false,
+  "fallback_mode": true
+}

@@ -1,0 +1,14 @@
+{
+  "backend": "colbert_unavailable_manifest_only",
+  "can_run_colbert": false,
+  "real_colbert_cases.trec": {
+    "rows": 10000,
+    "source": "doc2query_colbert_cases.trec",
+    "backend": "pipeline1_colbert_fallback_copy"
+  },
+  "real_colbert_statutes.trec": {
+    "rows": 9850,
+    "source": "bm25_colbert_statutes.trec",
+    "backend": "pipeline1_colbert_fallback_copy"
+  }
+}

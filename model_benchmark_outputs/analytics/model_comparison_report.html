@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Final Model Benchmark Pipeline</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #111827; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0 28px; }
+    th, td { border-bottom: 1px solid #e5e7eb; padding: 8px; text-align: left; }
+    th { background: #f8fafc; }
+    .note { color: #475569; }
+  </style>
+</head>
+<body>
+  <h1>Final Model Benchmark Pipeline</h1>
+  <p class="note">Fallback mode: True. Missing model packages: torch, transformers, sentence_transformers, faiss, sklearn, numpy, colbert.</p>
+  <h2>Retrieval Comparison</h2>
+  <table><tr><th>Run</th><th>Source</th><th>MAP</th><th>nDCG@10</th><th>Recall@100</th></tr><tr><td>dense_retrieval_statutes</td><td>model_benchmark</td><td>0.1237</td><td>0.1504</td><td>0.6897</td></tr><tr><td>doc2query_bm25_cases</td><td>pipeline1</td><td>0.1075</td><td>0.1360</td><td>0.3010</td></tr><tr><td>bm25_cases</td><td>pipeline1</td><td>0.1076</td><td>0.1342</td><td>0.3010</td></tr><tr><td>dense_retrieval_cases</td><td>model_benchmark</td><td>0.1140</td><td>0.1335</td><td>0.3288</td></tr><tr><td>cross_encoder_rerank_cases</td><td>model_benchmark</td><td>0.0937</td><td>0.1171</td><td>0.2797</td></tr><tr><td>colbert_cases</td><td>pipeline1</td><td>0.0728</td><td>0.1023</td><td>0.2330</td></tr><tr><td>bm25_colbert_cases</td><td>pipeline1</td><td>0.0717</td><td>0.1006</td><td>0.2419</td></tr><tr><td>doc2query_colbert_cases</td><td>pipeline1</td><td>0.0717</td><td>0.1006</td><td>0.2452</td></tr><tr><td>real_colbert_cases</td><td>model_benchmark</td><td>0.0717</td><td>0.1006</td><td>0.2452</td></tr><tr><td>bm25_statutes</td><td>pipeline1</td><td>0.0760</td><td>0.0950</td><td>0.4423</td></tr><tr><td>doc2query_bm25_statutes</td><td>pipeline1</td><td>0.0762</td><td>0.0948</td><td>0.4473</td></tr><tr><td>cross_encoder_rerank_statutes</td><td>model_benchmark</td><td>0.0654</td><td>0.0688</td><td>0.4703</td></tr><tr><td>colbert_statutes</td><td>pipeline1</td><td>0.0516</td><td>0.0513</td><td>0.4783</td></tr><tr><td>bm25_colbert_statutes</td><td>pipeline1</td><td>0.0521</td><td>0.0501</td><td>0.4783</td></tr><tr><td>doc2query_colbert_statutes</td><td>pipeline1</td><td>0.0521</td><td>0.0501</td><td>0.4783</td></tr><tr><td>real_colbert_statutes</td><td>model_benchmark</td><td>0.0521</td><td>0.0501</td><td>0.4783</td></tr></table>
+  <h2>Recommendation</h2>
+  <p>Install ML dependencies and rerun this pipeline to execute real transformer models.</p>
+</body>
+</html>

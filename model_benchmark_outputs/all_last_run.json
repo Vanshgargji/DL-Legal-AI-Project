@@ -1,0 +1,173 @@
+{
+  "command": "all",
+  "elapsed_seconds": 248.83659052848816,
+  "result": {
+    "environment": {
+      "python_version": "3.10.11",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "disk_free_gb": 701.77,
+      "packages": {
+        "torch": {
+          "installed": false,
+          "purpose": "Core tensor/model runtime"
+        },
+        "transformers": {
+          "installed": false,
+          "purpose": "Legal-BERT/InLegalBERT/LED model loading"
+        },
+        "sentence_transformers": {
+          "installed": false,
+          "purpose": "Dense retrieval embeddings and cross-encoder utilities"
+        },
+        "faiss": {
+          "installed": false,
+          "purpose": "Fast vector indexing"
+        },
+        "sklearn": {
+          "installed": false,
+          "purpose": "Model training and classification metrics"
+        },
+        "numpy": {
+          "installed": false,
+          "purpose": "Vector math backend"
+        },
+        "colbert": {
+          "installed": false,
+          "purpose": "Real ColBERTv2 late-interaction retrieval"
+        }
+      },
+      "torch": {
+        "available": false,
+        "cuda_available": false,
+        "device": "cpu"
+      },
+      "can_run_full_transformers": false,
+      "can_run_dense_retrieval": false,
+      "can_run_faiss": false,
+      "can_run_colbert": false,
+      "fallback_mode": true
+    },
+    "dense_retrieval": {
+      "backend": "tfidf_dense_fallback",
+      "cases": {
+        "run_id": "dense_retrieval_cases",
+        "run_path": "D:\\DL Legal AI Project\\model_benchmark_outputs\\runs\\dense_retrieval_cases.trec",
+        "rows": 50000,
+        "backend": "tfidf_dense_fallback"
+      },
+      "statutes": {
+        "run_id": "dense_retrieval_statutes",
+        "run_path": "D:\\DL Legal AI Project\\model_benchmark_outputs\\runs\\dense_retrieval_statutes.trec",
+        "rows": 9850,
+        "backend": "tfidf_dense_fallback"
+      }
+    },
+    "cross_encoder_rerank": {
+      "cases": {
+        "run_id": "cross_encoder_rerank_cases",
+        "run_path": "D:\\DL Legal AI Project\\model_benchmark_outputs\\runs\\cross_encoder_rerank_cases.trec",
+        "rows": 10000,
+        "backend": "cross_encoder_overlap_fallback"
+      },
+      "statutes": {
+        "run_id": "cross_encoder_rerank_statutes",
+        "run_path": "D:\\DL Legal AI Project\\model_benchmark_outputs\\runs\\cross_encoder_rerank_statutes.trec",
+        "rows": 9850,
+        "backend": "cross_encoder_overlap_fallback"
+      }
+    },
+    "classification": {
+      "backend": "pipeline2_silver_fallback",
+      "files": [
+        {
+          "file": "transformer_case_predictions.jsonl",
+          "rows": 2914
+        },
+        {
+          "file": "transformer_statute_predictions.jsonl",
+          "rows": 197
+        },
+        {
+          "file": "transformer_query_predictions.jsonl",
+          "rows": 50
+        }
+      ],
+      "note": "Install torch/transformers to train InLegalBERT or Legal-BERT classifier."
+    },
+    "colbert": {
+      "backend": "colbert_unavailable_manifest_only",
+      "can_run_colbert": false,
+      "real_colbert_cases.trec": {
+        "rows": 10000,
+        "source": "doc2query_colbert_cases.trec",
+        "backend": "pipeline1_colbert_fallback_copy"
+      },
+      "real_colbert_statutes.trec": {
+        "rows": 9850,
+        "source": "bm25_colbert_statutes.trec",
+        "backend": "pipeline1_colbert_fallback_copy"
+      }
+    },
+    "summarization": {
+      "backend": "pipeline3_extractive_fallback",
+      "summaries": 3111
+    },
+    "rag": {
+      "answers": 50,
+      "unsupported_citation_queries": [],
+      "citation_validity_rate": 1.0
+    },
+    "evaluation": {
+      "evaluated_runs": 6,
+      "runs": [
+        {
+          "run": "dense_retrieval_cases",
+          "map": 0.11403913609796938,
+          "ndcg@10": 0.13348374293216644,
+          "recall@100": 0.3287529137529138
+        },
+        {
+          "run": "dense_retrieval_statutes",
+          "map": 0.12366659184091297,
+          "ndcg@10": 0.15041560056371847,
+          "recall@100": 0.6896666666666669
+        },
+        {
+          "run": "cross_encoder_rerank_cases",
+          "map": 0.09373695068204099,
+          "ndcg@10": 0.11710159424912886,
+          "recall@100": 0.27973271173271175
+        },
+        {
+          "run": "cross_encoder_rerank_statutes",
+          "map": 0.06539589490063696,
+          "ndcg@10": 0.06882415974245017,
+          "recall@100": 0.4703333333333333
+        },
+        {
+          "run": "real_colbert_cases",
+          "map": 0.07168237135156288,
+          "ndcg@10": 0.10056871108320398,
+          "recall@100": 0.24521445221445223
+        },
+        {
+          "run": "real_colbert_statutes",
+          "map": 0.052126800071550586,
+          "ndcg@10": 0.05010092504033979,
+          "recall@100": 0.4783333333333332
+        }
+      ]
+    },
+    "analytics": {
+      "best_retrieval_by_ndcg@10": {
+        "run": "dense_retrieval_statutes",
+        "source": "model_benchmark",
+        "map": 0.12366659184091297,
+        "ndcg@10": 0.15041560056371847,
+        "recall@100": 0.6896666666666669
+      },
+      "environment_fallback_mode": true,
+      "next_step": "Install ML dependencies and rerun this pipeline to execute real transformer models."
+    }
+  }
+}

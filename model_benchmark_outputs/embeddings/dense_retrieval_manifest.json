@@ -1,0 +1,15 @@
+{
+  "backend": "tfidf_dense_fallback",
+  "cases": {
+    "run_id": "dense_retrieval_cases",
+    "run_path": "D:\\DL Legal AI Project\\model_benchmark_outputs\\runs\\dense_retrieval_cases.trec",
+    "rows": 50000,
+    "backend": "tfidf_dense_fallback"
+  },
+  "statutes": {
+    "run_id": "dense_retrieval_statutes",
+    "run_path": "D:\\DL Legal AI Project\\model_benchmark_outputs\\runs\\dense_retrieval_statutes.trec",
+    "rows": 9850,
+    "backend": "tfidf_dense_fallback"
+  }
+}

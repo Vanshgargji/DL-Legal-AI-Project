@@ -1,0 +1,58 @@
+{
+  "command": "analytics",
+  "elapsed_seconds": 0.30603504180908203,
+  "result": {
+    "summary_statistics_rows": 3111,
+    "review_candidates": 169,
+    "top_labels": [
+      [
+        "statutory_interpretation",
+        2377
+      ],
+      [
+        "criminal_law",
+        1841
+      ],
+      [
+        "civil_procedure",
+        1728
+      ],
+      [
+        "evidence_law",
+        1303
+      ],
+      [
+        "administrative_law",
+        1185
+      ],
+      [
+        "constitutional_law",
+        723
+      ],
+      [
+        "service_law",
+        495
+      ],
+      [
+        "property_law",
+        394
+      ],
+      [
+        "writ_jurisdiction",
+        351
+      ],
+      [
+        "family_law",
+        239
+      ],
+      [
+        "contract_law",
+        209
+      ],
+      [
+        "labor_law",
+        186
+      ]
+    ]
+  }
+}

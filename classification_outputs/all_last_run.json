@@ -1,0 +1,466 @@
+{
+  "command": "all",
+  "elapsed_seconds": 93.15862822532654,
+  "result": {
+    "schema": {
+      "multi_label": true,
+      "labels": {
+        "constitutional_law": {
+          "name": "Constitutional Law",
+          "description": "Fundamental rights, constitutional remedies, articles, and constitutional powers.",
+          "keywords": [
+            "constitution",
+            "constitutional",
+            "article",
+            "fundamental",
+            "rights",
+            "article 14",
+            "article 21"
+          ]
+        },
+        "criminal_law": {
+          "name": "Criminal Law",
+          "description": "Offences, conviction, sentence, bail, police investigation, and criminal procedure.",
+          "keywords": [
+            "criminal",
+            "accused",
+            "conviction",
+            "sentence",
+            "offence",
+            "murder",
+            "bail",
+            "police",
+            "ipc"
+          ]
+        },
+        "civil_procedure": {
+          "name": "Civil Procedure",
+          "description": "Civil suits, decrees, appeals, injunctions, limitation, and procedural orders.",
+          "keywords": [
+            "civil",
+            "suit",
+            "decree",
+            "injunction",
+            "appeal",
+            "plaintiff",
+            "defendant",
+            "limitation"
+          ]
+        },
+        "property_law": {
+          "name": "Property Law",
+          "description": "Land, possession, tenancy, transfer, ownership, acquisition, and property disputes.",
+          "keywords": [
+            "property",
+            "land",
+            "possession",
+            "tenant",
+            "lease",
+            "acquisition",
+            "ownership",
+            "transfer"
+          ]
+        },
+        "contract_law": {
+          "name": "Contract Law",
+          "description": "Agreements, contractual obligations, consideration, breach, damages, and commercial claims.",
+          "keywords": [
+            "contract",
+            "agreement",
+            "breach",
+            "consideration",
+            "damages",
+            "commercial",
+            "arbitration"
+          ]
+        },
+        "service_law": {
+          "name": "Service Law",
+          "description": "Employment, public service, recruitment, promotion, dismissal, pension, and service benefits.",
+          "keywords": [
+            "service",
+            "employment",
+            "employee",
+            "promotion",
+            "dismissal",
+            "pension",
+            "appointment",
+            "recruitment"
+          ]
+        },
+        "administrative_law": {
+          "name": "Administrative Law",
+          "description": "Government action, public authorities, tribunals, delegated powers, and administrative review.",
+          "keywords": [
+            "government",
+            "authority",
+            "administrative",
+            "tribunal",
+            "public",
+            "notification",
+            "commission"
+          ]
+        },
+        "evidence_law": {
+          "name": "Evidence Law",
+          "description": "Witnesses, admissibility, proof, documents, burden, and appreciation of evidence.",
+          "keywords": [
+            "evidence",
+            "witness",
+            "proof",
+            "documentary",
+            "admissible",
+            "testimony",
+            "burden"
+          ]
+        },
+        "family_law": {
+          "name": "Family Law",
+          "description": "Marriage, divorce, maintenance, succession, adoption, guardianship, and family rights.",
+          "keywords": [
+            "marriage",
+            "divorce",
+            "maintenance",
+            "succession",
+            "adoption",
+            "guardian",
+            "family",
+            "wife"
+          ]
+        },
+        "tax_law": {
+          "name": "Tax Law",
+          "description": "Income tax, sales tax, excise, customs, assessment, and revenue disputes.",
+          "keywords": [
+            "tax",
+            "income tax",
+            "sales tax",
+            "excise",
+            "customs",
+            "assessment",
+            "revenue"
+          ]
+        },
+        "labor_law": {
+          "name": "Labor Law",
+          "description": "Industrial disputes, wages, workmen, factories, labour welfare, and employment conditions.",
+          "keywords": [
+            "labour",
+            "labor",
+            "workman",
+            "industrial",
+            "wages",
+            "factory",
+            "union"
+          ]
+        },
+        "writ_jurisdiction": {
+          "name": "Writ Jurisdiction",
+          "description": "Writ petitions and constitutional remedies such as mandamus, certiorari, habeas corpus, and prohibition.",
+          "keywords": [
+            "writ",
+            "mandamus",
+            "certiorari",
+            "habeas",
+            "corpus",
+            "prohibition",
+            "article 226",
+            "article 32"
+          ]
+        },
+        "statutory_interpretation": {
+          "name": "Statutory Interpretation",
+          "description": "Meaning, construction, applicability, sections, articles, rules, regulations, and statutory powers.",
+          "keywords": [
+            "section",
+            "act",
+            "rule",
+            "rules",
+            "regulation",
+            "interpretation",
+            "statute",
+            "provision"
+          ]
+        },
+        "other": {
+          "name": "Other",
+          "description": "Fallback label when the issue is not clearly covered by the main taxonomy.",
+          "keywords": []
+        }
+      },
+      "defaults": {
+        "confidence_threshold": 0.18,
+        "max_labels_per_item": 4
+      }
+    },
+    "weak_labels": {
+      "cases_labeled": 2914,
+      "statutes_labeled": 197,
+      "queries_labeled": 50,
+      "cases_total": 2914,
+      "statutes_total": 197,
+      "queries_total": 50,
+      "schema_labels": [
+        "administrative_law",
+        "civil_procedure",
+        "constitutional_law",
+        "contract_law",
+        "criminal_law",
+        "evidence_law",
+        "family_law",
+        "labor_law",
+        "other",
+        "property_law",
+        "service_law",
+        "statutory_interpretation",
+        "tax_law",
+        "writ_jurisdiction"
+      ]
+    },
+    "features": {
+      "case_features": 2914,
+      "statute_features": 197,
+      "query_features": 50,
+      "vocabulary_terms": 5000
+    },
+    "model": {
+      "model_type": "rule_assisted_keyword_classifier",
+      "multi_label": true,
+      "threshold": 0.18,
+      "max_labels_per_item": 4,
+      "label_schema": {
+        "constitutional_law": {
+          "name": "Constitutional Law",
+          "description": "Fundamental rights, constitutional remedies, articles, and constitutional powers.",
+          "keywords": [
+            "constitution",
+            "constitutional",
+            "article",
+            "fundamental",
+            "rights",
+            "article 14",
+            "article 21"
+          ]
+        },
+        "criminal_law": {
+          "name": "Criminal Law",
+          "description": "Offences, conviction, sentence, bail, police investigation, and criminal procedure.",
+          "keywords": [
+            "criminal",
+            "accused",
+            "conviction",
+            "sentence",
+            "offence",
+            "murder",
+            "bail",
+            "police",
+            "ipc"
+          ]
+        },
+        "civil_procedure": {
+          "name": "Civil Procedure",
+          "description": "Civil suits, decrees, appeals, injunctions, limitation, and procedural orders.",
+          "keywords": [
+            "civil",
+            "suit",
+            "decree",
+            "injunction",
+            "appeal",
+            "plaintiff",
+            "defendant",
+            "limitation"
+          ]
+        },
+        "property_law": {
+          "name": "Property Law",
+          "description": "Land, possession, tenancy, transfer, ownership, acquisition, and property disputes.",
+          "keywords": [
+            "property",
+            "land",
+            "possession",
+            "tenant",
+            "lease",
+            "acquisition",
+            "ownership",
+            "transfer"
+          ]
+        },
+        "contract_law": {
+          "name": "Contract Law",
+          "description": "Agreements, contractual obligations, consideration, breach, damages, and commercial claims.",
+          "keywords": [
+            "contract",
+            "agreement",
+            "breach",
+            "consideration",
+            "damages",
+            "commercial",
+            "arbitration"
+          ]
+        },
+        "service_law": {
+          "name": "Service Law",
+          "description": "Employment, public service, recruitment, promotion, dismissal, pension, and service benefits.",
+          "keywords": [
+            "service",
+            "employment",
+            "employee",
+            "promotion",
+            "dismissal",
+            "pension",
+            "appointment",
+            "recruitment"
+          ]
+        },
+        "administrative_law": {
+          "name": "Administrative Law",
+          "description": "Government action, public authorities, tribunals, delegated powers, and administrative review.",
+          "keywords": [
+            "government",
+            "authority",
+            "administrative",
+            "tribunal",
+            "public",
+            "notification",
+            "commission"
+          ]
+        },
+        "evidence_law": {
+          "name": "Evidence Law",
+          "description": "Witnesses, admissibility, proof, documents, burden, and appreciation of evidence.",
+          "keywords": [
+            "evidence",
+            "witness",
+            "proof",
+            "documentary",
+            "admissible",
+            "testimony",
+            "burden"
+          ]
+        },
+        "family_law": {
+          "name": "Family Law",
+          "description": "Marriage, divorce, maintenance, succession, adoption, guardianship, and family rights.",
+          "keywords": [
+            "marriage",
+            "divorce",
+            "maintenance",
+            "succession",
+            "adoption",
+            "guardian",
+            "family",
+            "wife"
+          ]
+        },
+        "tax_law": {
+          "name": "Tax Law",
+          "description": "Income tax, sales tax, excise, customs, assessment, and revenue disputes.",
+          "keywords": [
+            "tax",
+            "income tax",
+            "sales tax",
+            "excise",
+            "customs",
+            "assessment",
+            "revenue"
+          ]
+        },
+        "labor_law": {
+          "name": "Labor Law",
+          "description": "Industrial disputes, wages, workmen, factories, labour welfare, and employment conditions.",
+          "keywords": [
+            "labour",
+            "labor",
+            "workman",
+            "industrial",
+            "wages",
+            "factory",
+            "union"
+          ]
+        },
+        "writ_jurisdiction": {
+          "name": "Writ Jurisdiction",
+          "description": "Writ petitions and constitutional remedies such as mandamus, certiorari, habeas corpus, and prohibition.",
+          "keywords": [
+            "writ",
+            "mandamus",
+            "certiorari",
+            "habeas",
+            "corpus",
+            "prohibition",
+            "article 226",
+            "article 32"
+          ]
+        },
+        "statutory_interpretation": {
+          "name": "Statutory Interpretation",
+          "description": "Meaning, construction, applicability, sections, articles, rules, regulations, and statutory powers.",
+          "keywords": [
+            "section",
+            "act",
+            "rule",
+            "rules",
+            "regulation",
+            "interpretation",
+            "statute",
+            "provision"
+          ]
+        },
+        "other": {
+          "name": "Other",
+          "description": "Fallback label when the issue is not clearly covered by the main taxonomy.",
+          "keywords": []
+        }
+      },
+      "label_support": {
+        "criminal_law": 1880,
+        "evidence_law": 1296,
+        "statutory_interpretation": 2274,
+        "administrative_law": 1211,
+        "property_law": 405,
+        "contract_law": 225,
+        "civil_procedure": 1772,
+        "service_law": 511,
+        "writ_jurisdiction": 358,
+        "tax_law": 157,
+        "constitutional_law": 731,
+        "family_law": 260,
+        "labor_law": 193,
+        "other": 18
+      },
+      "notes": "Offline pure-Python classifier. Replace scoring backend later without changing output shape."
+    },
+    "predictions": {
+      "case": 2914,
+      "statute": 197,
+      "query": 50
+    },
+    "evaluation": {
+      "collections": {
+        "cases": {
+          "micro_precision": 0.9760529258292956,
+          "micro_recall": 0.9831987985733058,
+          "micro_f1": 0.9796128308239035
+        },
+        "statutes": {
+          "micro_precision": 0.9276595744680851,
+          "micro_recall": 0.9710467706013363,
+          "micro_f1": 0.9488574537540806
+        },
+        "queries": {
+          "micro_precision": 0.825503355704698,
+          "micro_recall": 0.6542553191489362,
+          "micro_f1": 0.7299703264094957
+        }
+      },
+      "qrels_label_agreement": {
+        "positive_qrels_checked": 416,
+        "label_agreement_rate": 0.8100961538461539
+      }
+    },
+    "analytics": {
+      "distribution_rows": 42,
+      "manual_review_candidates": 19
+    }
+  }
+}

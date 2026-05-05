@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pipeline 3 Legal Summarization</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #111827; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0 28px; }
+    th, td { border-bottom: 1px solid #e5e7eb; padding: 8px; text-align: left; }
+    th { background: #f8fafc; }
+    .note { color: #475569; }
+  </style>
+</head>
+<body>
+  <h1>Pipeline 3: Legal Judgment Summarization</h1>
+  <p class="note">Extractive, citation-safe summaries built from AILA 2019 and Pipeline 1/2 outputs.</p>
+  <table>
+    <tr><th>Artifact</th><th>Count</th></tr>
+    <tr><td>Case summaries</td><td>2914</td></tr>
+    <tr><td>Statute summaries</td><td>197</td></tr>
+    <tr><td>Query-focused summaries</td><td>50</td></tr>
+    <tr><td>Citation validity</td><td>1.0000</td></tr>
+    <tr><td>Average compression ratio</td><td>0.1188</td></tr>
+    <tr><td>Validation errors</td><td>0</td></tr>
+  </table>
+  <h2>Most Common Legal Issue Labels</h2>
+  <table><tr><th>Label</th><th>Count</th></tr><tr><td>statutory_interpretation</td><td>2377</td></tr><tr><td>criminal_law</td><td>1841</td></tr><tr><td>civil_procedure</td><td>1728</td></tr><tr><td>evidence_law</td><td>1303</td></tr><tr><td>administrative_law</td><td>1185</td></tr><tr><td>constitutional_law</td><td>723</td></tr><tr><td>service_law</td><td>495</td></tr><tr><td>property_law</td><td>394</td></tr><tr><td>writ_jurisdiction</td><td>351</td></tr><tr><td>family_law</td><td>239</td></tr><tr><td>contract_law</td><td>209</td></tr><tr><td>labor_law</td><td>186</td></tr></table>
+  <h2>Example Query Summary</h2>
+  <p><strong>AILA_Q1</strong>: Query AILA_Q1 is tagged as criminal_law, civil_procedure, statutory_interpretation, administrative_law. The query-focused summary is grounded in cases C1651, C560, C2517, C174, C1240 and statutes S47, S67, S71, S150, S135.</p>
+</body>
+</html>

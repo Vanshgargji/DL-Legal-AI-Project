@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AILA Pipeline 1 Analytics</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #111827; }
+    h1, h2 { margin-bottom: 8px; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0 28px; }
+    th, td { border-bottom: 1px solid #e5e7eb; padding: 8px; text-align: left; font-size: 13px; }
+    th { background: #f8fafc; }
+    .note { color: #475569; }
+    .panel { margin: 20px 0 34px; }
+  </style>
+</head>
+<body>
+  <h1>AILA 2019 Pipeline 1 Analytics</h1>
+  <p class="note">Best case run: doc2query_bm25_cases.
+  Best statute run: bm25_statutes.</p>
+  <div class="panel"><svg viewBox="0 0 980 240" width="980" height="240" role="img" aria-label="Cases: MAP by Method">
+<style>text{font-family:Arial,sans-serif;font-size:13px}.title{font-size:18px;font-weight:700}.bar{fill:#2563eb}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text class="title" x="0" y="24">Cases: MAP by Method</text>
+<line class="axis" x1="230" y1="42" x2="940" y2="42"/>
+<text x="0" y="75">doc2query_bm25_cases</text>
+<rect class="bar" x="230" y="58" width="669" height="24" rx="3"/>
+<text x="907" y="75">0.1075</text>
+<text x="0" y="109">bm25_cases</text>
+<rect class="bar" x="230" y="92" width="670" height="24" rx="3"/>
+<text x="908" y="109">0.1076</text>
+<text x="0" y="143">colbert_cases</text>
+<rect class="bar" x="230" y="126" width="453" height="24" rx="3"/>
+<text x="691" y="143">0.0728</text>
+<text x="0" y="177">bm25_colbert_cases</text>
+<rect class="bar" x="230" y="160" width="446" height="24" rx="3"/>
+<text x="684" y="177">0.0717</text>
+<text x="0" y="211">doc2query_colbert_cases</text>
+<rect class="bar" x="230" y="194" width="446" height="24" rx="3"/>
+<text x="684" y="211">0.0717</text>
+</svg></div>
+  <div class="panel"><svg viewBox="0 0 980 240" width="980" height="240" role="img" aria-label="Cases: nDCG@10 by Method">
+<style>text{font-family:Arial,sans-serif;font-size:13px}.title{font-size:18px;font-weight:700}.bar{fill:#2563eb}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text class="title" x="0" y="24">Cases: nDCG@10 by Method</text>
+<line class="axis" x1="230" y1="42" x2="940" y2="42"/>
+<text x="0" y="75">doc2query_bm25_cases</text>
+<rect class="bar" x="230" y="58" width="670" height="24" rx="3"/>
+<text x="908" y="75">0.1360</text>
+<text x="0" y="109">bm25_cases</text>
+<rect class="bar" x="230" y="92" width="660" height="24" rx="3"/>
+<text x="898" y="109">0.1342</text>
+<text x="0" y="143">colbert_cases</text>
+<rect class="bar" x="230" y="126" width="504" height="24" rx="3"/>
+<text x="742" y="143">0.1023</text>
+<text x="0" y="177">bm25_colbert_cases</text>
+<rect class="bar" x="230" y="160" width="495" height="24" rx="3"/>
+<text x="733" y="177">0.1006</text>
+<text x="0" y="211">doc2query_colbert_cases</text>
+<rect class="bar" x="230" y="194" width="495" height="24" rx="3"/>
+<text x="733" y="211">0.1006</text>
+</svg></div>
+  <div class="panel"><svg viewBox="0 0 980 240" width="980" height="240" role="img" aria-label="Cases: Recall@100 by Method">
+<style>text{font-family:Arial,sans-serif;font-size:13px}.title{font-size:18px;font-weight:700}.bar{fill:#2563eb}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text class="title" x="0" y="24">Cases: Recall@100 by Method</text>
+<line class="axis" x1="230" y1="42" x2="940" y2="42"/>
+<text x="0" y="75">doc2query_bm25_cases</text>
+<rect class="bar" x="230" y="58" width="670" height="24" rx="3"/>
+<text x="908" y="75">0.3010</text>
+<text x="0" y="109">bm25_cases</text>
+<rect class="bar" x="230" y="92" width="670" height="24" rx="3"/>
+<text x="908" y="109">0.3010</text>
+<text x="0" y="143">colbert_cases</text>
+<rect class="bar" x="230" y="126" width="518" height="24" rx="3"/>
+<text x="756" y="143">0.2330</text>
+<text x="0" y="177">bm25_colbert_cases</text>
+<rect class="bar" x="230" y="160" width="538" height="24" rx="3"/>
+<text x="776" y="177">0.2419</text>
+<text x="0" y="211">doc2query_colbert_cases</text>
+<rect class="bar" x="230" y="194" width="545" height="24" rx="3"/>
+<text x="783" y="211">0.2452</text>
+</svg></div>
+  <div class="panel"><svg viewBox="0 0 980 240" width="980" height="240" role="img" aria-label="Statutes: MAP by Method">
+<style>text{font-family:Arial,sans-serif;font-size:13px}.title{font-size:18px;font-weight:700}.bar{fill:#2563eb}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text class="title" x="0" y="24">Statutes: MAP by Method</text>
+<line class="axis" x1="230" y1="42" x2="940" y2="42"/>
+<text x="0" y="75">bm25_statutes</text>
+<rect class="bar" x="230" y="58" width="667" height="24" rx="3"/>
+<text x="905" y="75">0.0760</text>
+<text x="0" y="109">doc2query_bm25_statutes</text>
+<rect class="bar" x="230" y="92" width="670" height="24" rx="3"/>
+<text x="908" y="109">0.0762</text>
+<text x="0" y="143">colbert_statutes</text>
+<rect class="bar" x="230" y="126" width="453" height="24" rx="3"/>
+<text x="691" y="143">0.0516</text>
+<text x="0" y="177">bm25_colbert_statutes</text>
+<rect class="bar" x="230" y="160" width="458" height="24" rx="3"/>
+<text x="696" y="177">0.0521</text>
+<text x="0" y="211">doc2query_colbert_statutes</text>
+<rect class="bar" x="230" y="194" width="458" height="24" rx="3"/>
+<text x="696" y="211">0.0521</text>
+</svg></div>
+  <div class="panel"><svg viewBox="0 0 980 240" width="980" height="240" role="img" aria-label="Statutes: nDCG@10 by Method">
+<style>text{font-family:Arial,sans-serif;font-size:13px}.title{font-size:18px;font-weight:700}.bar{fill:#2563eb}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text class="title" x="0" y="24">Statutes: nDCG@10 by Method</text>
+<line class="axis" x1="230" y1="42" x2="940" y2="42"/>
+<text x="0" y="75">bm25_statutes</text>
+<rect class="bar" x="230" y="58" width="670" height="24" rx="3"/>
+<text x="908" y="75">0.0950</text>
+<text x="0" y="109">doc2query_bm25_statutes</text>
+<rect class="bar" x="230" y="92" width="668" height="24" rx="3"/>
+<text x="906" y="109">0.0948</text>
+<text x="0" y="143">colbert_statutes</text>
+<rect class="bar" x="230" y="126" width="361" height="24" rx="3"/>
+<text x="599" y="143">0.0513</text>
+<text x="0" y="177">bm25_colbert_statutes</text>
+<rect class="bar" x="230" y="160" width="353" height="24" rx="3"/>
+<text x="591" y="177">0.0501</text>
+<text x="0" y="211">doc2query_colbert_statutes</text>
+<rect class="bar" x="230" y="194" width="353" height="24" rx="3"/>
+<text x="591" y="211">0.0501</text>
+</svg></div>
+  <div class="panel"><svg viewBox="0 0 980 240" width="980" height="240" role="img" aria-label="Statutes: Recall@100 by Method">
+<style>text{font-family:Arial,sans-serif;font-size:13px}.title{font-size:18px;font-weight:700}.bar{fill:#2563eb}.axis{stroke:#94a3b8;stroke-width:1}</style>
+<text class="title" x="0" y="24">Statutes: Recall@100 by Method</text>
+<line class="axis" x1="230" y1="42" x2="940" y2="42"/>
+<text x="0" y="75">bm25_statutes</text>
+<rect class="bar" x="230" y="58" width="619" height="24" rx="3"/>
+<text x="857" y="75">0.4423</text>
+<text x="0" y="109">doc2query_bm25_statutes</text>
+<rect class="bar" x="230" y="92" width="626" height="24" rx="3"/>
+<text x="864" y="109">0.4473</text>
+<text x="0" y="143">colbert_statutes</text>
+<rect class="bar" x="230" y="126" width="670" height="24" rx="3"/>
+<text x="908" y="143">0.4783</text>
+<text x="0" y="177">bm25_colbert_statutes</text>
+<rect class="bar" x="230" y="160" width="670" height="24" rx="3"/>
+<text x="908" y="177">0.4783</text>
+<text x="0" y="211">doc2query_colbert_statutes</text>
+<rect class="bar" x="230" y="194" width="670" height="24" rx="3"/>
+<text x="908" y="211">0.4783</text>
+</svg></div>
+  <h2>Run Comparison</h2>
+  <table>
+    <tr><th>Run</th><th>Collection</th><th>MAP</th><th>MRR</th><th>P@10</th><th>Recall@100</th><th>nDCG@10</th><th>nDCG@100</th></tr>
+    <tr><td>doc2query_bm25_cases</td><td>cases</td><td>0.1075</td><td>0.2128</td><td>0.0580</td><td>0.3010</td><td>0.1360</td><td>0.1819</td></tr><tr><td>bm25_cases</td><td>cases</td><td>0.1076</td><td>0.2125</td><td>0.0560</td><td>0.3010</td><td>0.1342</td><td>0.1819</td></tr><tr><td>colbert_cases</td><td>cases</td><td>0.0728</td><td>0.1514</td><td>0.0440</td><td>0.2330</td><td>0.1023</td><td>0.1315</td></tr><tr><td>bm25_colbert_cases</td><td>cases</td><td>0.0717</td><td>0.1495</td><td>0.0420</td><td>0.2419</td><td>0.1006</td><td>0.1341</td></tr><tr><td>doc2query_colbert_cases</td><td>cases</td><td>0.0717</td><td>0.1495</td><td>0.0420</td><td>0.2452</td><td>0.1006</td><td>0.1350</td></tr><tr><td>bm25_statutes</td><td>statutes</td><td>0.0760</td><td>0.1795</td><td>0.0520</td><td>0.4423</td><td>0.0950</td><td>0.1942</td></tr><tr><td>doc2query_bm25_statutes</td><td>statutes</td><td>0.0762</td><td>0.1783</td><td>0.0520</td><td>0.4473</td><td>0.0948</td><td>0.1956</td></tr><tr><td>colbert_statutes</td><td>statutes</td><td>0.0516</td><td>0.1038</td><td>0.0320</td><td>0.4783</td><td>0.0513</td><td>0.1728</td></tr><tr><td>bm25_colbert_statutes</td><td>statutes</td><td>0.0521</td><td>0.1061</td><td>0.0300</td><td>0.4783</td><td>0.0501</td><td>0.1735</td></tr><tr><td>doc2query_colbert_statutes</td><td>statutes</td><td>0.0521</td><td>0.1061</td><td>0.0300</td><td>0.4783</td><td>0.0501</td><td>0.1735</td></tr>
+  </table>
+  <h2>Retrieval Overlap</h2>
+  <p>Cases BM25 vs late-interaction top-10 Jaccard: 0.3744</p>
+  <p>Statutes BM25 vs late-interaction top-10 Jaccard: 0.2829</p>
+</body>
+</html>

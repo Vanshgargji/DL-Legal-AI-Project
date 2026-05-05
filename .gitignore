@@ -36,20 +36,12 @@ env/
 .ipynb_checkpoints/
 *.ipynb
 
-# Large data directories
+# Large data directories - EXCLUDED
 dataset aila/
 data/processed/
-classification_outputs/
-rag_outputs/
-summarization_outputs/
-model_benchmark_outputs/
-metrics/
 indexes/
 runs/
-
-# Logs and outputs
 logs/
-analytics/
 
 # OS
 .DS_Store

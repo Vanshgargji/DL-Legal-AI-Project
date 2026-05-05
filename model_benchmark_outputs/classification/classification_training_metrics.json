@@ -1,0 +1,18 @@
+{
+  "backend": "pipeline2_silver_fallback",
+  "files": [
+    {
+      "file": "transformer_case_predictions.jsonl",
+      "rows": 2914
+    },
+    {
+      "file": "transformer_statute_predictions.jsonl",
+      "rows": 197
+    },
+    {
+      "file": "transformer_query_predictions.jsonl",
+      "rows": 50
+    }
+  ],
+  "note": "Install torch/transformers to train InLegalBERT or Legal-BERT classifier."
+}

@@ -1,0 +1,24 @@
+{
+  "cases_labeled": 2914,
+  "statutes_labeled": 197,
+  "queries_labeled": 50,
+  "cases_total": 2914,
+  "statutes_total": 197,
+  "queries_total": 50,
+  "schema_labels": [
+    "administrative_law",
+    "civil_procedure",
+    "constitutional_law",
+    "contract_law",
+    "criminal_law",
+    "evidence_law",
+    "family_law",
+    "labor_law",
+    "other",
+    "property_law",
+    "service_law",
+    "statutory_interpretation",
+    "tax_law",
+    "writ_jurisdiction"
+  ]
+}

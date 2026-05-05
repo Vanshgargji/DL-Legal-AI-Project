@@ -1,0 +1,7 @@
+{
+  "answers": 50,
+  "best_case_run": "doc2query_bm25_cases",
+  "best_statute_run": "bm25_statutes",
+  "unsupported_citation_queries": [],
+  "weak_retrieval_queries": []
+}
